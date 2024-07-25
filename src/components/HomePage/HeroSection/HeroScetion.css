@@ -1,0 +1,47 @@
+.heroSection{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.heroSection .heroMain {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heroSection .heroMain .heading {
+    height: 40%;
+    width: 50%;
+}
+
+.heroSection .heroMain .heading h1 {
+    font-size: 50px;
+    color: white;
+    font-family: 'Montserrat';
+    margin-bottom: 3rem;
+}
+
+.heroSection .heroMain .heading p {
+    color: aliceblue;
+    font-family: 'Montserrat';
+}
+.authBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    justify-content: center;
+}
+
+@media (max-width: 750px) {
+    .heading{
+        display: none;
+    }
+    .heroSection .heroMain{
+        justify-content: center;
+        width: 100%;
+    }
+  }

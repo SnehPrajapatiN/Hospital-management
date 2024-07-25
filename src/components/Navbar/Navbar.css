@@ -1,0 +1,98 @@
+.navbar{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+}
+
+.nav{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+
+.nav .left{
+    color: white;
+    display: flex;
+    width: 30vw;
+    align-items: center;
+    gap: 7rem;
+    justify-content: space-between;
+}
+
+.left .logo{
+    font-family:'Montserrat';
+    font-weight: 700;
+}
+.left .logo span{
+    color: red;
+}
+.left .navigation{
+    display: flex;
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 3rem;
+}
+
+.left .navigation div{
+    cursor: pointer;
+    padding: .4rem;
+    transition: .1s all ease-in;
+
+}
+.left .navigation div:hover{
+    border-bottom: 3px solid red;
+}
+
+.list {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Menu icon */
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.dropdown-menu .list {
+    width: 100vw;
+    padding: 10px 20px;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .nav{
+        justify-content:space-between;
+    }
+    .left .navigation{
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: flex;
+    }
+}

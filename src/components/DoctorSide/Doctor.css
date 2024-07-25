@@ -1,0 +1,78 @@
+.dashboard{
+    width: 100%;
+    height: 100vh;
+    padding: 2rem;
+    background-color: antiquewhite;
+    display: flex;
+    gap: 10px;
+
+    
+}
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    /* border: 1px solid red; */
+
+}
+.left .doctorInfo{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 70%;
+    gap: 10px;
+
+    border: 1px solid red;
+
+}
+.card5{
+    scale: 1.3;
+}
+.left .doctorInfo .img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+
+}
+.left .doctorInfo .img img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.doctorInfo .doctorName,.doctorInfo .specialist,.doctorInfo .description{
+    width: 100%;
+    padding-left: 1rem;
+    height: 20%;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+
+}
+.right{
+    width: 70%;
+    height: 100%;
+    /* border: 1px solid red; */
+
+}
+.total{
+
+}
+.app_title{
+    width: 100%;
+    height: 10%;
+    background-color: blue;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 23px;
+
+
+}
+
+
+

@@ -1,0 +1,78 @@
+/* Patient.css */
+
+.App {
+    height: 100vh;
+    width: 100vw;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .App .navbar{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:aqua;
+    padding-right: 2rem;
+    width: 100%;
+
+  }
+
+  .App .navbar form{
+     width: 500px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+  }
+  h2 {
+    color: #333;
+    margin-right: 20px;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  p {
+    color: #555;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .doctor_section{
+    display: flex;
+    width: 100%;
+    margin-top: 10vh;
+    height: max-content;
+    justify-content: center;
+    background-color:white;
+}
+
+.doctor_section .box{
+  width: 90%;
+  height: 100%;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  /* border: 1px solid black; */
+  gap: 15px;
+}
+
+
+  @media(width <=1000px){
+    .doctor_section .box{
+  grid-template-columns: repeat(3,1fr);
+
+    }
+  }

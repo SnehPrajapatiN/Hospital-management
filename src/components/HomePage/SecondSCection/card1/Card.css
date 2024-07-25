@@ -1,0 +1,60 @@
+.card{
+    height: 300px;
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid skyblue;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: .3s all ease-in;
+}
+
+.card:hover{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    scale: 1.01;
+}
+
+.top{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 30%;
+    background-color:#8EC2F2;
+}
+.top .circle{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    color: skyblue;
+    font-size: 20px;
+}
+.top span{
+    margin-left:10px;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    color: white;
+}
+.down{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+    height: 70%;
+    align-items: center;
+   
+    justify-content: center;
+
+}
+
+.down span{
+    cursor: pointer;
+    color: aqua;
+
+}
+
